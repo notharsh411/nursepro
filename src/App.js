@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar, Clock, Video, Pill, Stethoscope } from 'lucide-react';
-//import { Alert, AlertDescription, AlertTitle } from 'src/components/ui/alert';
 import { Alert, AlertDescription, AlertTitle  } from './components/ui/alert';
+import ChatBot from './/components/ui/Chatbot.js'; // Adjust the import path as necessary
 const API_URL = 'http://localhost:5000/api';
 
 const NurseConnectPro = () => {
@@ -161,6 +161,8 @@ const NurseConnectPro = () => {
           </AlertDescription>
         </Alert>
       )}
+      {/* Chatbot */}
+      <ChatBot />
     </div>
   );
 };
